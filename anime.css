@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+#top_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#top_menu #logo img {
+    height: 80px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+#top_menu #menu_one {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#top_menu #menu_one .text {
+    margin-left: 40px;
+    padding: 28px 20px;
+    font-size: 20px;
+    color:#fff;
+    letter-spacing: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#top_menu #menu_one a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+/* ket thuc menu */
+/*bat dau banner */
+
+.banner {
+    min-height: 640px;
+    width: 100%;
+   
+}
+
+.banner_total {
+    overflow: hidden; 
+    width: 1440px;
+    height: 740px;
+    border-bottom: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.banner_total-anime {
+    position: relative;
+    width:300% ;
+   animation: slide 13s infinite;  
+    
+}  
+
+.banner_anime {
+    float: left; 
+    
+}
+
+.banner_anime img {
+    width: 1440px;
+    height: 660px;
+    margin-top: 80px;
+  
+}
+
+.banner_slogan {
+    
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+   text-shadow: 0 0 10px #000;
+}
+
+.banner_slogan-one {
+    position: absolute;
+    top:650px;
+    left: 16%;
+    transform: translateX(-50%); 
+}
+
+.banner_slogan-two {
+    position: absolute;
+    top:670px;
+    left: 49%;
+    transform: translateX(-50%); 
+}
+
+.banner_slogan-three {
+    position: absolute;
+    top:670px;
+    left: 84%;
+    transform: translateX(-50%); 
+}
+
+@keyframes slide {
+    10% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    40%{
+        margin-left: -100%;
+    }
+    60% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: -200%;
+    }
+}
+
+/*ket thuc banner*/
+/*bat dau project*/
+#project {
+    margin: 0 50px
+}
+
+#project #all_project {
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin: 100px 50px 20px 50px;
+}
+
+#project #name_project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-right: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+#project #name_project .name {
+    width: 300px;
+    height: 210px;
+    margin-bottom: 30px;
+}
+
+#name_project .name img {
+    width: 100%;
+    height: 100%;
+}
+
+#name_project .name p {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #000;
+    
+}
+/* ket thuc project*/
+/*bat dau About */
+
+#manga_about #shaper .shaper_title{
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin: 100px 50px 20px 50px;   
+}
+
+#manga_about #shaper p {
+    margin: 15px 50px 0 50px;
+    letter-spacing: 0.5px;
+    line-height: 18px;  
+}
+
+#manga_about #author {
+    display: flex;
+    margin: 80px 25px;
+    justify-content: space-around;
+}
+
+#manga_about #author .author_top {
+    width: 320px;
+    box-shadow: 0 0 5px;
+    border: 0.5px solid #f7f3f3;
+    height: 100%;
+}
+#manga_about #author .author_one {
+    height: 250px;
+} 
+#author .author_one img {
+    height: 100%;
+    width: 100%;
+}
+#author .author_top h3 {
+    font-size: 30px;
+    padding: 20px 14px;
+}
+#author .author_top h4 {
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #838383;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#author .author_top p{
+    text-align: justify;
+    padding: 0 14px;
+}
+
+.author_contact {
+    margin-top: 20px;
+}
+#author .author_top button {
+    margin: 26px 0 0 0;
+    padding: 12px 125px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.author_contact-one {
+    margin-top: -15px;
+}
+#author .author_top button:hover {
+    background-color: #ccc;
+}
+/* ket thuc about */
+/* bat dau contact*/
+
+.contact_top {
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    margin: 100px 50px 20px 50px;  
+    
+}
+
+.contact_main {
+    margin: 50px 40px;
+}
+
+.contact_main-name {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.contact_main-button {
+    margin-top: 40px;
+    padding: 14px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.contact_main-button:hover {
+    background-color: #838383;
+    color: #000;
+    cursor: pointer;
+}
+
+/* ket thuc contact */
+/* bat dau footer */
+
+#footer {
+    height: 200px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer_creator {
+    float: left;
+    width: 15%;
+    margin: 46px 0 0 500px;
+}
+
+.footer_donors {
+    float: right;
+    margin: 46px 440px 0 0;
+    line-height: 36px;
+    padding-left: 90px;
+    border-left: 1px solid;
+}
+.footer_creator-one {
+    font-size: 40px;
+}
+
+.footer_creator-two {
+    font-size: 20px;
+    padding-left: 20px;
+}
+.footer_donors-total {
+    font-size: 20px;
+}
+
+.footer_icon {
+    margin-left: 15px;
+}
+
+.footer_donors-page {
+    font-size: 40px;
+
+}
+
